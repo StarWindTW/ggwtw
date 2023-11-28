@@ -1,0 +1,1101 @@
+[debug] [2023-11-28T15:56:38.855Z] ----------------------------------------------------------------------
+[debug] [2023-11-28T15:56:38.860Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-28T15:56:38.860Z] CLI Version:   12.7.0
+[debug] [2023-11-28T15:56:38.860Z] Platform:      win32
+[debug] [2023-11-28T15:56:38.860Z] Node Version:  v21.2.0
+[debug] [2023-11-28T15:56:38.860Z] Time:          Tue Nov 28 2023 23:56:38 GMT+0800 (台北標準時間)
+[debug] [2023-11-28T15:56:38.860Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-28T15:56:38.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-28T15:56:38.901Z] > authorizing via signed-in user (shngjnlan@gmail.com)
+[debug] [2023-11-28T15:56:38.901Z] [iam] checking project ggwtw-344616 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-28T15:56:38.902Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T15:56:38.902Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:56:38.903Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-28T15:56:39.808Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T15:56:39.808Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-28T15:56:39.808Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T15:56:40.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T15:56:40.080Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[debug] [2023-11-28T15:56:43.710Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites pageToken=&pageSize=10
+[debug] [2023-11-28T15:56:44.229Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 200
+[debug] [2023-11-28T15:56:44.229Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites {"sites":[{"name":"projects/ggwtw-344616/sites/ggwtw-344616","defaultUrl":"https://ggwtw-344616.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-28T15:56:44.230Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 
+[debug] [2023-11-28T15:56:44.560Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 200
+[debug] [2023-11-28T15:56:44.560Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites {"sites":[{"name":"projects/ggwtw-344616/sites/ggwtw-344616","defaultUrl":"https://ggwtw-344616.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-28T15:56:44.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config [none]
+[debug] [2023-11-28T15:56:45.293Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config 200
+[debug] [2023-11-28T15:56:45.293Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config {"projectId":"ggwtw-344616","appId":"1:948625745477:web:ceb697d1ec4edf7f6a652c","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central","apiKey":"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g","authDomain":"ggwtw-344616.firebaseapp.com","messagingSenderId":"948625745477","measurementId":"G-DL92ZD1KHW"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    ▲ Next.js 14.0.2
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info] (node:258520) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:117684) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:213728) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:293392) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]    Generating static pages (0/7) ...
+
+[info]    Generating static pages (1/7) 
+
+[info]    Generating static pages (3/7) 
+
+[info] (node:67888) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]    Generating static pages (5/7) 
+
+[info] (node:236760) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:416264) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] Folder: file
+Folder: mdx
+
+[info]  ✓ Generating static pages (7/7) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    180 B          91.4 kB
+├ ○ /_not-found                          870 B          85.3 kB
+├ λ /[slug]                              200 B          91.4 kB
+├ ○ /editor                              180 B          91.4 kB
+├ λ /editor/[slug]                       180 B          91.4 kB
+└ ○ /test                                41.8 kB         126 kB
++ First Load JS shared by all            84.5 kB
+  ├ chunks/472-923cd71e827d017d.js       29.2 kB
+  ├ chunks/fd9d1056-527282311086ce89.js  53.3 kB
+  ├ chunks/main-app-f0fc6356d676ad56.js  218 B
+  └ chunks/webpack-f3877657f17450b0.js   1.74 kB
+
+
+[info] 
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found
+[info]  • non-static component /editor/[slug]/page
+[info]  • non-static component /[slug]/page
+[info] 
+[warn] !  This integration expects Node version 16, 18, or 20. You're running version 21, problems may be encountered. 
+[debug] [2023-11-28T15:57:53.473Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      },
+      "site": "ggwtw-344616",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrggwtw344616",
+            "region": "asia-east1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoiZ2d3dHctMzQ0NjE2IiwiYXBwSWQiOiIxOjk0ODYyNTc0NTQ3Nzp3ZWI6Y2ViNjk3ZDFlYzRlZGY3ZjZhNjUyYyIsInN0b3JhZ2VCdWNrZXQiOiJnZ3d0dy0zNDQ2MTYuYXBwc3BvdC5jb20iLCJsb2NhdGlvbklkIjoidXMtY2VudHJhbCIsImFwaUtleSI6IkFJemFTeUFWUHlmWkljVzMxYWVqNkw4TDJmNXp0ZUtWbml0VmQ3ZyIsImF1dGhEb21haW4iOiJnZ3d0dy0zNDQ2MTYuZmlyZWJhc2VhcHAuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI5NDg2MjU3NDU0NzciLCJtZWFzdXJlbWVudElkIjoiRy1ETDkyWkQxS0hXIn0sIl9hdXRoVG9rZW5TeW5jVVJMIjoiL19fc2Vzc2lvbiJ9; SameSite=Strict; Expires=2025-10-23T02:37:53.473Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase\\ggwtw-344616\\hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\ggwtw-344616\\functions",
+      "codebase": "firebase-frameworks-ggwtw-344616"
+    }
+  ]
+}
+[debug] [2023-11-28T15:57:53.473Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-28T15:57:53.473Z] > authorizing via signed-in user (shngjnlan@gmail.com)
+[debug] [2023-11-28T15:57:53.473Z] [iam] checking project ggwtw-344616 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-11-28T15:57:53.473Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T15:57:53.473Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:53.473Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-28T15:57:54.267Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T15:57:54.267Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'ggwtw-344616'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-11-28T15:57:54.269Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T15:57:54.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T15:57:54.603Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[info] i  functions: preparing codebase firebase-frameworks-ggwtw-344616 for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-11-28T15:57:54.605Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-28T15:57:54.605Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:54.605Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-28T15:57:54.605Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:54.606Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [none]
+[debug] [2023-11-28T15:57:54.606Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:54.606Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [none]
+[debug] [2023-11-28T15:57:54.607Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:55.819Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com 200
+[debug] [2023-11-28T15:57:55.819Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2023-11-28T15:57:55.820Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2023-11-28T15:57:55.820Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:55.820Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-28T15:57:55.820Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-11-28T15:57:55.840Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-28T15:57:55.840Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudfunctions.googleapis.com. Enabling now... 
+[debug] [2023-11-28T15:57:55.840Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-11-28T15:57:55.841Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:55.852Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com 200
+[debug] [2023-11-28T15:57:55.852Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2023-11-28T15:57:55.852Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2023-11-28T15:57:55.852Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:57:56.583Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-11-28T15:57:56.584Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-11-28T15:57:57.054Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com:enable 200
+[debug] [2023-11-28T15:57:57.055Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2023-11-28T15:57:57.115Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com:enable 200
+[debug] [2023-11-28T15:57:57.115Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2023-11-28T15:58:06.585Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-28T15:58:06.586Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:07.069Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [none]
+[debug] [2023-11-28T15:58:07.069Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:07.115Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [none]
+[debug] [2023-11-28T15:58:07.115Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:07.751Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-28T15:58:07.751Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:08.237Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com 200
+[debug] [2023-11-28T15:58:08.238Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:08.272Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com 200
+[debug] [2023-11-28T15:58:08.272Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:08.273Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig [none]
+[debug] [2023-11-28T15:58:08.550Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig 200
+[debug] [2023-11-28T15:58:08.550Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig {"projectId":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"}
+[debug] [2023-11-28T15:58:08.550Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs [none]
+[debug] [2023-11-28T15:58:09.433Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs 200
+[debug] [2023-11-28T15:58:09.433Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs {}
+[debug] [2023-11-28T15:58:09.434Z] Validating nodejs source
+[debug] [2023-11-28T15:58:10.222Z] > [functions] package.json contents: {
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.2",
+    "firebase": "^10.6.0",
+    "gray-matter": "^4.0.3",
+    "next": "14.0.2",
+    "next-mdx-remote": "^4.4.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "rehype-code-titles": "^1.2.0",
+    "rehype-prism-plus": "^1.6.3",
+    "rehype-raw": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "unified": "^11.0.4",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2023-11-28T15:58:10.223Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-ggwtw-344616 to determine what to deploy 
+[debug] [2023-11-28T15:58:10.223Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-28T15:58:10.228Z] Found firebase-functions binary at 'D:\ggwtw\my-app\.firebase\ggwtw-344616\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8479
+
+[debug] [2023-11-28T15:58:13.004Z] Got response from /__/functions.yaml {"endpoints":{"ssrggwtw344616":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-east1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrggwtw344616"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase\ggwtw-344616\functions directory for uploading... 
+[info] i  functions: packaged D:\ggwtw\my-app\.firebase\ggwtw-344616\functions (131.47 MB) for uploading 
+[debug] [2023-11-28T15:58:23.141Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions [none]
+[debug] [2023-11-28T15:58:23.628Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions 200
+[debug] [2023-11-28T15:58:23.628Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions {}
+[debug] [2023-11-28T15:58:23.628Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-11-28T15:58:24.924Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions 200
+[debug] [2023-11-28T15:58:24.924Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-11-28T15:58:24.925Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [none]
+[debug] [2023-11-28T15:58:24.926Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:24.926Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [none]
+[debug] [2023-11-28T15:58:24.926Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:24.927Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com [none]
+[debug] [2023-11-28T15:58:24.927Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:24.927Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com [none]
+[debug] [2023-11-28T15:58:24.927Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:26.076Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com 200
+[debug] [2023-11-28T15:58:26.076Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [omitted]
+[warn] !  functions: missing required API eventarc.googleapis.com. Enabling now... 
+[debug] [2023-11-28T15:58:26.076Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com:enable [none]
+[debug] [2023-11-28T15:58:26.076Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com:enable x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:26.079Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com 200
+[debug] [2023-11-28T15:58:26.079Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [omitted]
+[warn] !  functions: missing required API run.googleapis.com. Enabling now... 
+[debug] [2023-11-28T15:58:26.079Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com:enable [none]
+[debug] [2023-11-28T15:58:26.079Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com:enable x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:26.081Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com 200
+[debug] [2023-11-28T15:58:26.081Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com [omitted]
+[info] +  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:26.109Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com 200
+[debug] [2023-11-28T15:58:26.109Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com [omitted]
+[info] +  functions: required API storage.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:26.720Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com:enable 200
+[debug] [2023-11-28T15:58:26.720Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com:enable [omitted]
+[debug] [2023-11-28T15:58:27.460Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com:enable 200
+[debug] [2023-11-28T15:58:27.460Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com:enable [omitted]
+[debug] [2023-11-28T15:58:36.732Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [none]
+[debug] [2023-11-28T15:58:36.732Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:37.463Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [none]
+[debug] [2023-11-28T15:58:37.464Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:37.904Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com 200
+[debug] [2023-11-28T15:58:37.904Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [omitted]
+[info] +  functions: required API run.googleapis.com is enabled 
+[debug] [2023-11-28T15:58:38.609Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com 200
+[debug] [2023-11-28T15:58:38.609Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [omitted]
+[info] +  functions: required API eventarc.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-11-28T15:58:38.610Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-28T15:58:38.610Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-28T15:58:39.335Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-28T15:58:39.335Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-948625745477@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"112443847510459961481"}}
+[debug] [2023-11-28T15:58:39.469Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-28T15:58:39.470Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-948625745477@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"111683050289466494233"}}
+[debug] [2023-11-28T15:58:39.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T15:58:39.700Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T15:58:39.700Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[debug] [2023-11-28T15:58:39.702Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions [none]
+[debug] [2023-11-28T15:58:39.702Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-28T15:58:40.630Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions 200
+[debug] [2023-11-28T15:58:40.630Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions {"name":"projects/948625745477/sites/ggwtw-344616/versions/1f20ad011867b766","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-28T15:58:40.630Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2023-11-28T15:58:40.630Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T15:58:40.630Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T15:58:40.630Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-11-28T15:58:41.422Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T15:58:41.423Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-11-28T15:58:41.423Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2023-11-28T15:58:41.423Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl [none]
+[debug] [2023-11-28T15:58:44.032Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl 200
+[debug] [2023-11-28T15:58:44.033Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/eb3ff915-2ad9-414d-8a78-2e5135428080.zip?GoogleAccessId=service-948625745477@gcf-admin-robot.iam.gserviceaccount.com&Expires=1701188934&Signature=csBfHEm7YyuSopCydZj0orr0T5GMtRYHBgguUou9tYX4pJ2tog7aLkRRlSBLjun5VwNg0EeX6BMc7620bLzWfgKuGg2KwGb0E3rMzs2KWXEMGP2UwBv6MGmquX08RtWIAHB%2B0WLuC40QYMipTkTqDDZLlIZsf18tQMUrCslMMou6Z%2BVdl%2BjTZhcfJ2N%2BeLyQus%2BpUk%2FsOlx80MRkf3IDqHvAkJQFm065nKXFNR1nJtOgxgBgrtB3Kble15ubn4roJzZv%2Bwz6Gbq9%2FqPA3kXVUZh2RcEDH0xplhS9MOOuR%2BIUk4Kn6Ha98ZGyqVTR5FKCzJE7bd2C0WOO10GrK014%2BQ%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-948625745477-asia-east1","object":"eb3ff915-2ad9-414d-8a78-2e5135428080.zip"}}
+[debug] [2023-11-28T15:58:44.033Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/eb3ff915-2ad9-414d-8a78-2e5135428080.zip GoogleAccessId=service-948625745477%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1701188934&Signature=csBfHEm7YyuSopCydZj0orr0T5GMtRYHBgguUou9tYX4pJ2tog7aLkRRlSBLjun5VwNg0EeX6BMc7620bLzWfgKuGg2KwGb0E3rMzs2KWXEMGP2UwBv6MGmquX08RtWIAHB%2B0WLuC40QYMipTkTqDDZLlIZsf18tQMUrCslMMou6Z%2BVdl%2BjTZhcfJ2N%2BeLyQus%2BpUk%2FsOlx80MRkf3IDqHvAkJQFm065nKXFNR1nJtOgxgBgrtB3Kble15ubn4roJzZv%2Bwz6Gbq9%2FqPA3kXVUZh2RcEDH0xplhS9MOOuR%2BIUk4Kn6Ha98ZGyqVTR5FKCzJE7bd2C0WOO10GrK014%2BQ%3D%3D
+[debug] [2023-11-28T15:58:44.033Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/eb3ff915-2ad9-414d-8a78-2e5135428080.zip [stream]
+[debug] [2023-11-28T15:58:48.178Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/eb3ff915-2ad9-414d-8a78-2e5135428080.zip 200
+[debug] [2023-11-28T15:58:48.178Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/eb3ff915-2ad9-414d-8a78-2e5135428080.zip [omitted]
+[info] +  functions: .firebase\ggwtw-344616\functions folder uploaded successfully 
+[info] i  hosting[ggwtw-344616]: beginning deploy... 
+[info] i  hosting[ggwtw-344616]: found 37 files in .firebase\ggwtw-344616\hosting 
+[debug] [2023-11-28T15:58:48.189Z] [hosting] uploading with 200 concurrency
+[debug] [2023-11-28T15:58:48.189Z] [hosting] hash cache [LmZpcmViYXNlXGdnd3R3LTM0NDYxNlxob3N0aW5n] not populated
+[debug] [2023-11-28T15:58:48.256Z] [hosting] hash cache [LmZpcmViYXNlXGdnd3R3LTM0NDYxNlxob3N0aW5n] stored for 37 files
+[debug] [2023-11-28T15:58:48.257Z] [hosting][hash queue][FINAL] {"max":64,"min":46,"avg":49.75675675675676,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":67}
+[debug] [2023-11-28T15:58:48.257Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/1f20ad011867b766:populateFiles [none]
+[debug] [2023-11-28T15:58:48.257Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/1f20ad011867b766:populateFiles {"files":{"/editor.html":"78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b","/next.svg":"0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","/index.html":"e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68","/vercel.svg":"41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59","/_next/static/-euOKl1RKfFUdNnLGaVMt/_buildManifest.js":"cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9","/_next/static/-euOKl1RKfFUdNnLGaVMt/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/favicon.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/404.html":"09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73","/_next/static/chunks/326-674d84386f07f073.js":"776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2","/_next/static/chunks/main-app-f0fc6356d676ad56.js":"edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1","/_next/static/chunks/webpack-f3877657f17450b0.js":"35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6","/_next/static/chunks/app/layout-b3a58a96a25b7381.js":"04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069","/_next/static/chunks/app/page-3baf5e2bbe8979fb.js":"20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816","/test.html":"2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10","/_next/static/chunks/app/editor/page-a6cffc76fe98e18f.js":"a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95","/_next/static/chunks/app/editor/[slug]/page-ad28fed07339c6e6.js":"a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c","/_next/static/chunks/app/[slug]/page-f64aa70d7b2b463c.js":"58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf","/_next/static/chunks/pages/_app-ee276fea40a4b191.js":"3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d","/_next/static/chunks/pages/_error-deeb844d2074b9d8.js":"27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126","/_next/static/chunks/app/test/page-8f692a0b058600da.js":"320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846","/_next/static/css/4c73dc5092c95167.css":"ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43","/_next/static/css/e81d9e6449c57e5b.css":"429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92","/_next/static/media/05a31a2ca4975f99-s.woff2":"533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a","/_next/static/media/fd4db3eb5472fc27-s.woff2":"d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49","/_next/static/chunks/100-6445df84f4984049.js":"f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049","/_next/static/media/51ed15f9841b9f9d-s.woff2":"1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be","/_next/static/media/ec159349637c90ad-s.woff2":"50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112","/_next/static/media/513657b02c5c193f-s.woff2":"8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41","/_next/static/chunks/3d8f973b-27a5a6c4d5cda3ff.js":"443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae","/_next/static/chunks/472-923cd71e827d017d.js":"2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa","/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js":"b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9","/_next/static/chunks/main-2a8654deab8c8511.js":"0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe","/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2":"767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74","/_next/static/media/d6b16ce4a6175f26-s.woff2":"dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f","/_next/static/chunks/fd9d1056-527282311086ce89.js":"2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e","/_next/static/chunks/app/_not-found-802510d501364431.js":"048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384","/_next/static/chunks/framework-8883d1e9be70c3da.js":"5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef"}}
+[debug] [2023-11-28T15:58:48.678Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/1f20ad011867b766:populateFiles 200
+[debug] [2023-11-28T15:58:48.678Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/1f20ad011867b766:populateFiles {"uploadRequiredHashes":["443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae","2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10","0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe","f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049","09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73","a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c","048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384","27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126","0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a","cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9","35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6","edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1","50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112","dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f","5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef","2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e","d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49","58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf","dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92","3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d","8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41","1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be","320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846","36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74","ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43","776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2","e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68","2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa","b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9","41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59","20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816","a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95","78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b","04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files"}
+[debug] [2023-11-28T15:58:48.680Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae [none]
+[debug] [2023-11-28T15:58:48.680Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae [stream]
+[debug] [2023-11-28T15:58:48.680Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10 [none]
+[debug] [2023-11-28T15:58:48.680Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10 [stream]
+[debug] [2023-11-28T15:58:48.681Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe [none]
+[debug] [2023-11-28T15:58:48.681Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe [stream]
+[debug] [2023-11-28T15:58:48.681Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049 [none]
+[debug] [2023-11-28T15:58:48.681Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049 [stream]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73 [none]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73 [stream]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c [none]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c [stream]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384 [none]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384 [stream]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126 [none]
+[debug] [2023-11-28T15:58:48.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126 [stream]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f [none]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f [stream]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a [none]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a [stream]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9 [none]
+[debug] [2023-11-28T15:58:48.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9 [stream]
+[debug] [2023-11-28T15:58:48.684Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6 [none]
+[debug] [2023-11-28T15:58:48.684Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6 [stream]
+[debug] [2023-11-28T15:58:48.684Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1 [none]
+[debug] [2023-11-28T15:58:48.684Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1 [stream]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112 [none]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112 [stream]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f [none]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f [stream]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef [none]
+[debug] [2023-11-28T15:58:48.685Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef [stream]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e [none]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e [stream]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49 [none]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49 [stream]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf [none]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf [stream]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5 [none]
+[debug] [2023-11-28T15:58:48.686Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5 [stream]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92 [none]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92 [stream]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d [none]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d [stream]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41 [none]
+[debug] [2023-11-28T15:58:48.687Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41 [stream]
+[debug] [2023-11-28T15:58:48.688Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be [none]
+[debug] [2023-11-28T15:58:48.688Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be [stream]
+[debug] [2023-11-28T15:58:48.688Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846 [none]
+[debug] [2023-11-28T15:58:48.688Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846 [stream]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9 [none]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9 [stream]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74 [none]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74 [stream]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43 [none]
+[debug] [2023-11-28T15:58:48.689Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43 [stream]
+[debug] [2023-11-28T15:58:48.690Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2 [none]
+[debug] [2023-11-28T15:58:48.690Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2 [stream]
+[debug] [2023-11-28T15:58:48.690Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68 [none]
+[debug] [2023-11-28T15:58:48.690Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68 [stream]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa [none]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa [stream]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9 [none]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9 [stream]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59 [none]
+[debug] [2023-11-28T15:58:48.691Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59 [stream]
+[debug] [2023-11-28T15:58:48.692Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816 [none]
+[debug] [2023-11-28T15:58:48.692Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816 [stream]
+[debug] [2023-11-28T15:58:48.692Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95 [none]
+[debug] [2023-11-28T15:58:48.692Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95 [stream]
+[debug] [2023-11-28T15:58:48.693Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b [none]
+[debug] [2023-11-28T15:58:48.693Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b [stream]
+[debug] [2023-11-28T15:58:48.694Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069 [none]
+[debug] [2023-11-28T15:58:48.694Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069 [stream]
+[debug] [2023-11-28T15:58:48.694Z] [hosting][populate queue][FINAL] {"max":424,"min":424,"avg":424,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":439}
+[debug] [2023-11-28T15:58:48.694Z] [hosting] uploads queued: 37
+[debug] [2023-11-28T15:58:49.700Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9 200
+[debug] [2023-11-28T15:58:49.700Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9 [stream]
+[debug] [2023-11-28T15:58:49.728Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49 200
+[debug] [2023-11-28T15:58:49.729Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49 [stream]
+[debug] [2023-11-28T15:58:49.740Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae 200
+[debug] [2023-11-28T15:58:49.740Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae [stream]
+[debug] [2023-11-28T15:58:49.742Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f 200
+[debug] [2023-11-28T15:58:49.742Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f [stream]
+[debug] [2023-11-28T15:58:49.758Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a 200
+[debug] [2023-11-28T15:58:49.758Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a [stream]
+[debug] [2023-11-28T15:58:49.771Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59 200
+[debug] [2023-11-28T15:58:49.771Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59 [stream]
+[debug] [2023-11-28T15:58:49.772Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126 200
+[debug] [2023-11-28T15:58:49.772Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126 [stream]
+[debug] [2023-11-28T15:58:49.773Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74 200
+[debug] [2023-11-28T15:58:49.773Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74 [stream]
+[debug] [2023-11-28T15:58:49.774Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be 200
+[debug] [2023-11-28T15:58:49.774Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be [stream]
+[debug] [2023-11-28T15:58:49.779Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112 200
+[debug] [2023-11-28T15:58:49.779Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112 [stream]
+[debug] [2023-11-28T15:58:49.783Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e 200
+[debug] [2023-11-28T15:58:49.783Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e [stream]
+[debug] [2023-11-28T15:58:49.790Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa 200
+[debug] [2023-11-28T15:58:49.790Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa [stream]
+[debug] [2023-11-28T15:58:49.820Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f 200
+[debug] [2023-11-28T15:58:49.821Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f [stream]
+[debug] [2023-11-28T15:58:49.836Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049 200
+[debug] [2023-11-28T15:58:49.836Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049 [stream]
+[debug] [2023-11-28T15:58:49.842Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10 200
+[debug] [2023-11-28T15:58:49.842Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/2deda2416b584bf4f6b347a8cfec8d5f5186ff19b691362f3b7025c71783ae10 [stream]
+[debug] [2023-11-28T15:58:49.847Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846 200
+[debug] [2023-11-28T15:58:49.847Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846 [stream]
+[debug] [2023-11-28T15:58:49.855Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef 200
+[debug] [2023-11-28T15:58:49.855Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef [stream]
+[debug] [2023-11-28T15:58:49.865Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1 200
+[debug] [2023-11-28T15:58:49.865Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1 [stream]
+[debug] [2023-11-28T15:58:49.870Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe 200
+[debug] [2023-11-28T15:58:49.870Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe [stream]
+[debug] [2023-11-28T15:58:49.873Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384 200
+[debug] [2023-11-28T15:58:49.873Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384 [stream]
+[debug] [2023-11-28T15:58:49.875Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6 200
+[debug] [2023-11-28T15:58:49.875Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/35ff92ce3978ebe36e5265b2cbcd9976c8e79a4737f42f2f97af4657781f64f6 [stream]
+[debug] [2023-11-28T15:58:49.878Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9 200
+[debug] [2023-11-28T15:58:49.878Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9 [stream]
+[debug] [2023-11-28T15:58:49.880Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68 200
+[debug] [2023-11-28T15:58:49.880Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/e747b78b3b0215c04cbed8eaa24a539d3bd1fb45112ffa93bdd2635e5ebd5e68 [stream]
+[debug] [2023-11-28T15:58:49.888Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b 200
+[debug] [2023-11-28T15:58:49.888Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/78dde2d4b0f20cba84b7cae56b7c6632e609c327df8949bca88eb1d9a343103b [stream]
+[debug] [2023-11-28T15:58:49.888Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73 200
+[debug] [2023-11-28T15:58:49.888Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/09ad1e41005363edd2e008adbe3e60158864f52060ef178bbf82901d5e7b4b73 [stream]
+[debug] [2023-11-28T15:58:49.898Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43 200
+[debug] [2023-11-28T15:58:49.898Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43 [stream]
+[debug] [2023-11-28T15:58:49.913Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816 200
+[debug] [2023-11-28T15:58:49.913Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816 [stream]
+[debug] [2023-11-28T15:58:49.918Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d 200
+[debug] [2023-11-28T15:58:49.918Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d [stream]
+[debug] [2023-11-28T15:58:49.929Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95 200
+[debug] [2023-11-28T15:58:49.929Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95 [stream]
+[debug] [2023-11-28T15:58:49.959Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5 200
+[debug] [2023-11-28T15:58:49.959Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5 [stream]
+[debug] [2023-11-28T15:58:49.967Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2 200
+[debug] [2023-11-28T15:58:49.967Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2 [stream]
+[debug] [2023-11-28T15:58:50.001Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92 200
+[debug] [2023-11-28T15:58:50.001Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/429d7788f427a0d9b91d090933fd8eb49b9446280c8ea74a2f695f42990e0a92 [stream]
+[debug] [2023-11-28T15:58:50.014Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c 200
+[debug] [2023-11-28T15:58:50.014Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c [stream]
+[debug] [2023-11-28T15:58:50.023Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069 200
+[debug] [2023-11-28T15:58:50.023Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069 [stream]
+[debug] [2023-11-28T15:58:50.072Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf 200
+[debug] [2023-11-28T15:58:50.072Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/58aa139f2ca3c718a2407fba5c668f73266b15d956deeece914cbcb7ab91ebcf [stream]
+[debug] [2023-11-28T15:58:50.179Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41 200
+[debug] [2023-11-28T15:58:50.179Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41 [stream]
+[debug] [2023-11-28T15:58:50.269Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9 200
+[debug] [2023-11-28T15:58:50.269Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/1f20ad011867b766/files/b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9 [stream]
+[debug] [2023-11-28T15:58:50.269Z] [hosting][upload queue][FINAL] {"max":1590,"min":1021,"avg":1198.6216216216217,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":1591}
+[info] +  hosting[ggwtw-344616]: file upload complete 
+[debug] [2023-11-28T15:58:50.270Z] [hosting] deploy completed after 2089ms
+[info] i  functions: creating Node.js 20 (2nd Gen) function firebase-frameworks-ggwtw-344616:ssrggwtw344616(asia-east1)... 
+[debug] [2023-11-28T15:58:50.273Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions functionId=ssrggwtw344616
+[debug] [2023-11-28T15:58:50.273Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions {"name":"projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrggwtw344616","source":{"storageSource":{"bucket":"gcf-v2-uploads-948625745477-asia-east1","object":"eb3ff915-2ad9-414d-8a78-2e5135428080.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"ggwtw-344616\",\"appId\":\"1:948625745477:web:ceb697d1ec4edf7f6a652c\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g\",\"authDomain\":\"ggwtw-344616.firebaseapp.com\",\"messagingSenderId\":\"948625745477\",\"measurementId\":\"G-DL92ZD1KHW\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"ggwtw-344616\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\"}","GCLOUD_PROJECT":"ggwtw-344616","EVENTARC_CLOUD_EVENT_SOURCE":"projects/ggwtw-344616/locations/asia-east1/services/ssrggwtw344616","FUNCTION_TARGET":"ssrggwtw344616"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-ggwtw-344616","firebase-functions-hash":"6196ec74ad3f319aefeba7e93a4fe7d1531fced7"}}
+[debug] [2023-11-28T15:58:52.386Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions 400
+[debug] [2023-11-28T15:58:52.387Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions {"error":{"code":400,"message":"Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.","status":"INVALID_ARGUMENT"}}
+[warn] !  functions: Your current project quotas don't allow for the current max instances setting of 100. Either reduce this function's maximum instances, or request a quota increase on the underlying Cloud Run service at https://cloud.google.com/run/quotas. 
+[warn] !  functions: You can adjust the max instances value in your function's runtime options:
+	setGlobalOptions({maxInstances: 10}) 
+[error] Failed to create function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616
+[debug] [2023-11-28T15:58:52.393Z] Total Function Deployment time: 2117
+[debug] [2023-11-28T15:58:52.393Z] 1 Functions Deployed
+[debug] [2023-11-28T15:58:52.393Z] 1 Functions Errored
+[debug] [2023-11-28T15:58:52.393Z] 0 Function Deployments Aborted
+[debug] [2023-11-28T15:58:52.393Z] Average Function Deployment time: 2116
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-ggwtw-344616:ssrggwtw344616(asia-east1)
+[debug] [2023-11-28T15:58:52.433Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-11-28T15:58:52.434Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 [none]
+[debug] [2023-11-28T15:58:52.434Z] >>> [apiv2][query] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list [none]
+[debug] [2023-11-28T15:58:52.514Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 500
+[debug] [2023-11-28T15:58:52.514Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[debug] [2023-11-28T15:58:54.739Z] <<< [apiv2][status] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list 200
+[debug] [2023-11-28T15:58:54.739Z] <<< [apiv2][body] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list {"child":[],"manifest":{},"name":"ggwtw-344616/gcf/asia-east1","tags":[]}
+[debug] [2023-11-28T15:58:54.739Z] Could not find image for function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616
+[warn] !  functions: Unhandled error cleaning up build images. This could result in a small monthly bill if not corrected. You can attempt to delete these images by redeploying or you can delete them manually at https://console.cloud.google.com/artifacts/docker/ggwtw-344616/asia-east1/gcf-artifacts 
+[debug] [2023-11-28T15:58:54.739Z] Functions deploy failed.
+[debug] [2023-11-28T15:58:54.739Z] {
+  "endpoint": {
+    "id": "ssrggwtw344616",
+    "project": "ggwtw-344616",
+    "region": "asia-east1",
+    "entryPoint": "ssrggwtw344616",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"ggwtw-344616\",\"appId\":\"1:948625745477:web:ceb697d1ec4edf7f6a652c\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g\",\"authDomain\":\"ggwtw-344616.firebaseapp.com\",\"messagingSenderId\":\"948625745477\",\"measurementId\":\"G-DL92ZD1KHW\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"ggwtw-344616\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\"}",
+      "GCLOUD_PROJECT": "ggwtw-344616",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/ggwtw-344616/locations/asia-east1/services/ssrggwtw344616"
+    },
+    "codebase": "firebase-frameworks-ggwtw-344616",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "6196ec74ad3f319aefeba7e93a4fe7d1531fced7"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 400, Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2023-11-28T15:58:54.751Z] Error: Failed to create function ssrggwtw344616 in region asia-east1
+    at C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:291:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV2Function (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:277:30)
+    at async Fabricator.createEndpoint (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:136:13)
+    at async handle (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions
+[debug] [2023-11-28T16:00:34.694Z] ----------------------------------------------------------------------
+[debug] [2023-11-28T16:00:34.696Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-28T16:00:34.696Z] CLI Version:   12.7.0
+[debug] [2023-11-28T16:00:34.696Z] Platform:      win32
+[debug] [2023-11-28T16:00:34.696Z] Node Version:  v21.2.0
+[debug] [2023-11-28T16:00:34.696Z] Time:          Wed Nov 29 2023 00:00:34 GMT+0800 (台北標準時間)
+[debug] [2023-11-28T16:00:34.696Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-28T16:00:34.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-28T16:00:34.735Z] > authorizing via signed-in user (shngjnlan@gmail.com)
+[debug] [2023-11-28T16:00:34.735Z] [iam] checking project ggwtw-344616 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-28T16:00:34.736Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T16:00:34.736Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:00:34.737Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-28T16:00:35.570Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T16:00:35.570Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-28T16:00:35.571Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T16:00:35.912Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T16:00:35.912Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[debug] [2023-11-28T16:00:38.099Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites pageToken=&pageSize=10
+[debug] [2023-11-28T16:00:38.477Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 200
+[debug] [2023-11-28T16:00:38.477Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites {"sites":[{"name":"projects/ggwtw-344616/sites/ggwtw-344616","defaultUrl":"https://ggwtw-344616.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-28T16:00:38.477Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 
+[debug] [2023-11-28T16:00:38.793Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites 200
+[debug] [2023-11-28T16:00:38.793Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwtw-344616/sites {"sites":[{"name":"projects/ggwtw-344616/sites/ggwtw-344616","defaultUrl":"https://ggwtw-344616.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-28T16:00:38.793Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config [none]
+[debug] [2023-11-28T16:00:39.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config 200
+[debug] [2023-11-28T16:00:39.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/webApps/-/config {"projectId":"ggwtw-344616","appId":"1:948625745477:web:ceb697d1ec4edf7f6a652c","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central","apiKey":"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g","authDomain":"ggwtw-344616.firebaseapp.com","messagingSenderId":"948625745477","measurementId":"G-DL92ZD1KHW"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    ▲ Next.js 14.0.2
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info] (node:300772) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:185768) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:522640) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:314292) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]    Generating static pages (0/7) ...
+
+[info]    Generating static pages (1/7) 
+
+[info]    Generating static pages (3/7) 
+
+[info] (node:442340) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]    Generating static pages (5/7) 
+
+[info] Folder: file
+Folder: mdx
+
+[info] (node:125724) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:221740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ✓ Generating static pages (7/7) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    180 B          91.4 kB
+├ ○ /_not-found                          870 B          85.3 kB
+├ λ /[slug]                              198 B          91.4 kB
+├ ○ /editor                              180 B          91.4 kB
+├ λ /editor/[slug]                       180 B          91.4 kB
+└ ○ /test                                41.8 kB         126 kB
++ First Load JS shared by all            84.5 kB
+  ├ chunks/472-923cd71e827d017d.js       29.2 kB
+  ├ chunks/fd9d1056-527282311086ce89.js  53.3 kB
+  ├ chunks/main-app-f0fc6356d676ad56.js  218 B
+  └ chunks/webpack-fad03176b924959f.js   1.74 kB
+
+
+[info] 
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found
+[info]  • non-static component /[slug]/page
+[info]  • non-static component /editor/[slug]/page
+[info] 
+[warn] !  This integration expects Node version 16, 18, or 20. You're running version 21, problems may be encountered. 
+[debug] [2023-11-28T16:01:02.388Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      },
+      "site": "ggwtw-344616",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrggwtw344616",
+            "region": "asia-east1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoiZ2d3dHctMzQ0NjE2IiwiYXBwSWQiOiIxOjk0ODYyNTc0NTQ3Nzp3ZWI6Y2ViNjk3ZDFlYzRlZGY3ZjZhNjUyYyIsInN0b3JhZ2VCdWNrZXQiOiJnZ3d0dy0zNDQ2MTYuYXBwc3BvdC5jb20iLCJsb2NhdGlvbklkIjoidXMtY2VudHJhbCIsImFwaUtleSI6IkFJemFTeUFWUHlmWkljVzMxYWVqNkw4TDJmNXp0ZUtWbml0VmQ3ZyIsImF1dGhEb21haW4iOiJnZ3d0dy0zNDQ2MTYuZmlyZWJhc2VhcHAuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI5NDg2MjU3NDU0NzciLCJtZWFzdXJlbWVudElkIjoiRy1ETDkyWkQxS0hXIn0sIl9hdXRoVG9rZW5TeW5jVVJMIjoiL19fc2Vzc2lvbiJ9; SameSite=Strict; Expires=2025-10-23T02:41:02.388Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase\\ggwtw-344616\\hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\ggwtw-344616\\functions",
+      "codebase": "firebase-frameworks-ggwtw-344616"
+    }
+  ]
+}
+[debug] [2023-11-28T16:01:02.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-28T16:01:02.389Z] > authorizing via signed-in user (shngjnlan@gmail.com)
+[debug] [2023-11-28T16:01:02.389Z] [iam] checking project ggwtw-344616 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-11-28T16:01:02.389Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T16:01:02.389Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:02.389Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-28T16:01:02.572Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T16:01:02.572Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'ggwtw-344616'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-11-28T16:01:02.574Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T16:01:02.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T16:01:02.946Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[info] i  functions: preparing codebase firebase-frameworks-ggwtw-344616 for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-11-28T16:01:02.947Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-28T16:01:02.947Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:02.947Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-28T16:01:02.947Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:02.948Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [none]
+[debug] [2023-11-28T16:01:02.948Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:02.949Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [none]
+[debug] [2023-11-28T16:01:02.949Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:04.113Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com 200
+[debug] [2023-11-28T16:01:04.113Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:04.117Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-28T16:01:04.117Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-11-28T16:01:04.122Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com 200
+[debug] [2023-11-28T16:01:04.122Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:04.161Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-28T16:01:04.162Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:04.162Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig [none]
+[debug] [2023-11-28T16:01:04.392Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig 200
+[debug] [2023-11-28T16:01:04.392Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616/adminSdkConfig {"projectId":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"}
+[debug] [2023-11-28T16:01:04.392Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs [none]
+[debug] [2023-11-28T16:01:04.717Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs 200
+[debug] [2023-11-28T16:01:04.717Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ggwtw-344616/configs {}
+[debug] [2023-11-28T16:01:04.718Z] Validating nodejs source
+[debug] [2023-11-28T16:01:05.569Z] > [functions] package.json contents: {
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.2",
+    "firebase": "^10.6.0",
+    "gray-matter": "^4.0.3",
+    "next": "14.0.2",
+    "next-mdx-remote": "^4.4.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "rehype-code-titles": "^1.2.0",
+    "rehype-prism-plus": "^1.6.3",
+    "rehype-raw": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "unified": "^11.0.4",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2023-11-28T16:01:05.570Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-ggwtw-344616 to determine what to deploy 
+[debug] [2023-11-28T16:01:05.570Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-28T16:01:05.574Z] Found firebase-functions binary at 'D:\ggwtw\my-app\.firebase\ggwtw-344616\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8040
+
+[debug] [2023-11-28T16:01:05.767Z] Got response from /__/functions.yaml {"endpoints":{"ssrggwtw344616":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-east1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrggwtw344616"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase\ggwtw-344616\functions directory for uploading... 
+[info] i  functions: packaged D:\ggwtw\my-app\.firebase\ggwtw-344616\functions (131.48 MB) for uploading 
+[debug] [2023-11-28T16:01:14.074Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions [none]
+[debug] [2023-11-28T16:01:14.730Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions 200
+[debug] [2023-11-28T16:01:14.731Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/ggwtw-344616/locations/-/functions {}
+[debug] [2023-11-28T16:01:14.731Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-11-28T16:01:16.028Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions 200
+[debug] [2023-11-28T16:01:16.028Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-11-28T16:01:16.029Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [none]
+[debug] [2023-11-28T16:01:16.029Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:16.030Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [none]
+[debug] [2023-11-28T16:01:16.030Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:16.031Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com [none]
+[debug] [2023-11-28T16:01:16.031Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:16.031Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com [none]
+[debug] [2023-11-28T16:01:16.031Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:17.166Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com 200
+[debug] [2023-11-28T16:01:17.166Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/eventarc.googleapis.com [omitted]
+[info] +  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:17.186Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com 200
+[debug] [2023-11-28T16:01:17.186Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/run.googleapis.com [omitted]
+[info] +  functions: required API run.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:17.191Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com 200
+[debug] [2023-11-28T16:01:17.191Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/pubsub.googleapis.com [omitted]
+[info] +  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-11-28T16:01:17.212Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com 200
+[debug] [2023-11-28T16:01:17.212Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ggwtw-344616/services/storage.googleapis.com [omitted]
+[info] +  functions: required API storage.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-11-28T16:01:17.213Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-28T16:01:17.213Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-28T16:01:18.465Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-28T16:01:18.466Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-948625745477@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"112443847510459961481"}}
+[debug] [2023-11-28T16:01:18.775Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-28T16:01:18.776Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/948625745477/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-948625745477@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"111683050289466494233"}}
+[debug] [2023-11-28T16:01:18.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 [none]
+[debug] [2023-11-28T16:01:19.055Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 200
+[debug] [2023-11-28T16:01:19.055Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwtw-344616 {"projectId":"ggwtw-344616","projectNumber":"948625745477","displayName":"ggwtw","name":"projects/ggwtw-344616","resources":{"hostingSite":"ggwtw-344616","storageBucket":"ggwtw-344616.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_1f0c8501-1cba-4916-8288-263d8e57c901"}
+[debug] [2023-11-28T16:01:19.057Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions [none]
+[debug] [2023-11-28T16:01:19.058Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-28T16:01:19.608Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions 200
+[debug] [2023-11-28T16:01:19.608Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ggwtw-344616/versions {"name":"projects/948625745477/sites/ggwtw-344616/versions/4aa934675cab0dee","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-28T16:01:19.609Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2023-11-28T16:01:19.609Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions [none]
+[debug] [2023-11-28T16:01:19.609Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions x-goog-quota-user=projects/ggwtw-344616
+[debug] [2023-11-28T16:01:19.609Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-11-28T16:01:19.799Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions 200
+[debug] [2023-11-28T16:01:19.799Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ggwtw-344616:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-11-28T16:01:19.799Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2023-11-28T16:01:19.799Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl [none]
+[debug] [2023-11-28T16:01:19.900Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl 200
+[debug] [2023-11-28T16:01:19.900Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip?GoogleAccessId=service-948625745477@gcf-admin-robot.iam.gserviceaccount.com&Expires=1701189089&Signature=Ghk9d42tYUopT2vB3oaITyX7SXY3z5pmAY0w1Jf603fUUwGLy4eI60vX15%2FD4er7d4kz5VMTCbuIcWhaLJ%2BMFKnDr9CKOeyatjXjMR5Kd5nFBbgjIxEOuvWiUv9DNOxNvyVm9RDFvq%2FzO%2FP6p4JmOf3qAeDLgIJPN3aZgzTq9ZhP4mXqPDH9zx5ecOLcM9I2XGK3Hz8DnRSoLwiLkOYswyf26gYrPk5SC9qHxhJKcMGUho3qGTM1fJW47VRLOoO1iLyBtDncaC98MrnnoOuEZo%2FNNB7FDf2bI%2B2CM5UIEPnaXc2D9TFycrr4QgAPgBiVwZcwwxqCTAdRURQp6ITlUw%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-948625745477-asia-east1","object":"b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip"}}
+[debug] [2023-11-28T16:01:19.900Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip GoogleAccessId=service-948625745477%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1701189089&Signature=Ghk9d42tYUopT2vB3oaITyX7SXY3z5pmAY0w1Jf603fUUwGLy4eI60vX15%2FD4er7d4kz5VMTCbuIcWhaLJ%2BMFKnDr9CKOeyatjXjMR5Kd5nFBbgjIxEOuvWiUv9DNOxNvyVm9RDFvq%2FzO%2FP6p4JmOf3qAeDLgIJPN3aZgzTq9ZhP4mXqPDH9zx5ecOLcM9I2XGK3Hz8DnRSoLwiLkOYswyf26gYrPk5SC9qHxhJKcMGUho3qGTM1fJW47VRLOoO1iLyBtDncaC98MrnnoOuEZo%2FNNB7FDf2bI%2B2CM5UIEPnaXc2D9TFycrr4QgAPgBiVwZcwwxqCTAdRURQp6ITlUw%3D%3D
+[debug] [2023-11-28T16:01:19.900Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip [stream]
+[debug] [2023-11-28T16:01:23.346Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip 200
+[debug] [2023-11-28T16:01:23.346Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-948625745477-asia-east1/b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip [omitted]
+[info] +  functions: .firebase\ggwtw-344616\functions folder uploaded successfully 
+[info] i  hosting[ggwtw-344616]: beginning deploy... 
+[info] i  hosting[ggwtw-344616]: found 37 files in .firebase\ggwtw-344616\hosting 
+[debug] [2023-11-28T16:01:23.353Z] [hosting] uploading with 200 concurrency
+[debug] [2023-11-28T16:01:23.370Z] [hosting] hash cache [LmZpcmViYXNlXGdnd3R3LTM0NDYxNlxob3N0aW5n] stored for 37 files
+[debug] [2023-11-28T16:01:23.370Z] [hosting][hash queue][FINAL] {"max":12,"min":2,"avg":8.35135135135135,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":15}
+[debug] [2023-11-28T16:01:23.371Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/4aa934675cab0dee:populateFiles [none]
+[debug] [2023-11-28T16:01:23.371Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/4aa934675cab0dee:populateFiles {"files":{"/next.svg":"0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","/vercel.svg":"41e95a86eeec887b8b898097594cf4c4bc5da8f58faf05830e1229d7dcbeea59","/404.html":"0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6","/test.html":"c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a","/index.html":"bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e","/editor.html":"158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f","/_next/static/chunks/326-674d84386f07f073.js":"776e27227ef51c7cdb8426d48854299e9f9adb1be76022c1ba80db7d7384b2c2","/favicon.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/_next/static/chunks/main-app-f0fc6356d676ad56.js":"edfbab36224e81cc808887fb3ae3297ff941fa51ef601fe06ed0bbe9bd97c5a1","/_next/static/chunks/app/page-3baf5e2bbe8979fb.js":"20a0f06f7b8da9832de08a965a88c0ff7e5c574ac2693987727bd4e5b94ec816","/_next/static/chunks/webpack-fad03176b924959f.js":"e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084","/_next/static/chunks/app/layout-b3a58a96a25b7381.js":"04ee552de45216572ce2000e1dcbcf41130f87e3d1734de4953f3ec179af2069","/_next/static/chunks/app/_not-found-802510d501364431.js":"048e409c6f9019fec4c7efa53afde621a472c037862dc510714a2a6bdc405384","/_next/static/chunks/app/test/page-8f692a0b058600da.js":"320111fdaf64fac2bff2ce1edfc30e3149c44a6b646d423290468b9f3b38b846","/_next/static/chunks/app/[slug]/page-630403f73560b314.js":"728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048","/_next/static/chunks/pages/_app-ee276fea40a4b191.js":"3e1b079cfe654f4ad8a292ad2062d56d78e1d4820bbfecb7951067bbb99eba5d","/_next/static/chunks/app/editor/page-a6cffc76fe98e18f.js":"a63bed41790182b02f8e28d56180a2515499c185f34aa5c549aa071a5598ba95","/_next/static/chunks/app/editor/[slug]/page-ad28fed07339c6e6.js":"a7c25f1ccdbb0b52b177cad684b22274b6bf33ffc93c7591b3a71658c605dc9c","/_next/static/chunks/pages/_error-deeb844d2074b9d8.js":"27009a9432e1f0e8f97b1c869e32cc21208d0dedc1b27f74fea11b6fbb0d8126","/_next/static/DFgW9r1_dmq3BvqnnEill/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_next/static/css/2bcb973c003ad47d.css":"c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717","/_next/static/media/05a31a2ca4975f99-s.woff2":"533588b3634aea8a5dd8c7bf534655dae95caac158832a7773bd92d075a5827a","/_next/static/DFgW9r1_dmq3BvqnnEill/_buildManifest.js":"cd6084ef5b501ca473764420ba0c9e74e0d31d15b22c8d2168e46e68afa337e9","/_next/static/css/4c73dc5092c95167.css":"ca3ad8eca6860733b6114f5944a8eea83717253dd7f4ebeb6bc2dc98b3fbea43","/_next/static/media/fd4db3eb5472fc27-s.woff2":"d3230447a362642f82e299b97d5c995a05d8e9840b5576d0205fda781bc33d49","/_next/static/chunks/100-6445df84f4984049.js":"f3dd99bf32855a1e1e874cf32e41b8cabb36eb3faed33d1e7ba62c99f1737049","/_next/static/media/513657b02c5c193f-s.woff2":"8a4796ae2b40e24640f2fab2d06c5ba2a0d92081182544a520ef2dd37981ad41","/_next/static/media/51ed15f9841b9f9d-s.woff2":"1cd94ee81c3b3020816a0dfdc37c4ceccaf415995d1bddb5fc4bcfc7692809be","/_next/static/media/ec159349637c90ad-s.woff2":"50e8bf554736b50cb28bbd997a38dd7b386b9ed3bad0fe36c3516c15cbeeb112","/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2":"767ca5287d85791577d29765fe716c1c8b5181e68354a1faa6d20ad638c84b74","/_next/static/chunks/472-923cd71e827d017d.js":"2edb1204000ab8f23c21b76a8bf857bf48d471e5a16f33162ea079a0230ad0fa","/_next/static/chunks/3d8f973b-27a5a6c4d5cda3ff.js":"443e619343fd59ed72551e624d43e004ffc452a0530ce9d9f51bf30d30ffb7ae","/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js":"b3f8382f31c34463ad628cbba6015e17e7bbe35b09328e794fc8bb8a634534a9","/_next/static/chunks/framework-8883d1e9be70c3da.js":"5cfc2417f64ce456f19218b2cf5778099dddd17a11b52fbb26f179135ca4fdef","/_next/static/chunks/main-2a8654deab8c8511.js":"0fb5235ca160f4492e7f6c3c5b389844097c68f6d5d418ac772d24fa1c821cfe","/_next/static/media/d6b16ce4a6175f26-s.woff2":"dc193b28c8edf202a8f68dd7a95f4a771cccb5affa1538636966cb22ed7b378f","/_next/static/chunks/fd9d1056-527282311086ce89.js":"2d98379947cbf436b91b4f623f33e310327acc53cb4234f70ef665760d6e4e9e"}}
+[debug] [2023-11-28T16:01:23.758Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/4aa934675cab0dee:populateFiles 200
+[debug] [2023-11-28T16:01:23.758Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/948625745477/sites/ggwtw-344616/versions/4aa934675cab0dee:populateFiles {"uploadRequiredHashes":["158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f","bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e","c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a","e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084","c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717","728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048","0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files"}
+[debug] [2023-11-28T16:01:23.759Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f [none]
+[debug] [2023-11-28T16:01:23.759Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f [stream]
+[debug] [2023-11-28T16:01:23.760Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e [none]
+[debug] [2023-11-28T16:01:23.760Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e [stream]
+[debug] [2023-11-28T16:01:23.761Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a [none]
+[debug] [2023-11-28T16:01:23.761Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a [stream]
+[debug] [2023-11-28T16:01:23.761Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084 [none]
+[debug] [2023-11-28T16:01:23.761Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084 [stream]
+[debug] [2023-11-28T16:01:23.762Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717 [none]
+[debug] [2023-11-28T16:01:23.762Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717 [stream]
+[debug] [2023-11-28T16:01:23.762Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048 [none]
+[debug] [2023-11-28T16:01:23.762Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048 [stream]
+[debug] [2023-11-28T16:01:23.763Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6 [none]
+[debug] [2023-11-28T16:01:23.763Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6 [stream]
+[debug] [2023-11-28T16:01:23.763Z] [hosting][populate queue][FINAL] {"max":390,"min":390,"avg":390,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":394}
+[debug] [2023-11-28T16:01:23.764Z] [hosting] uploads queued: 7
+[debug] [2023-11-28T16:01:24.787Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f 200
+[debug] [2023-11-28T16:01:24.787Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/158ae6e1f01f9ef867ed5847d1f8d4fbab997ef4d1e01a7a6b16308406b6fb2f [stream]
+[debug] [2023-11-28T16:01:24.804Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084 200
+[debug] [2023-11-28T16:01:24.805Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/e1049f72ad40e93105db548e670d0810a21e2e4f91be60bb850fe710dbc67084 [stream]
+[debug] [2023-11-28T16:01:24.866Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6 200
+[debug] [2023-11-28T16:01:24.866Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/0899026dad48c238d133e5bd507d23869b99b12c2001e60ca069edb42c33e0e6 [stream]
+[debug] [2023-11-28T16:01:24.882Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048 200
+[debug] [2023-11-28T16:01:24.882Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/728a72116c731d2f563f602c485118818b6cbe00974daeb38c5b92ca26576048 [stream]
+[debug] [2023-11-28T16:01:24.883Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e 200
+[debug] [2023-11-28T16:01:24.883Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/bdc18d1f3aef10294822dd265d3266a5d191b4eea553ed9a43a5d3da3e6c441e [stream]
+[debug] [2023-11-28T16:01:24.915Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717 200
+[debug] [2023-11-28T16:01:24.915Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c90ee53d789b156db1657a62bc925a116a27c5fd57f3959e2fbd04ac13475717 [stream]
+[debug] [2023-11-28T16:01:25.284Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a 200
+[debug] [2023-11-28T16:01:25.284Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ggwtw-344616/versions/4aa934675cab0dee/files/c5c627e652bfa9ed11887ce98a10099c290bb1053f8de6f16a365e664e39d73a [stream]
+[debug] [2023-11-28T16:01:25.284Z] [hosting][upload queue][FINAL] {"max":1525,"min":1029,"avg":1158.5714285714287,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":1526}
+[info] +  hosting[ggwtw-344616]: file upload complete 
+[debug] [2023-11-28T16:01:25.285Z] [hosting] deploy completed after 1937ms
+[info] i  functions: creating Node.js 20 (2nd Gen) function firebase-frameworks-ggwtw-344616:ssrggwtw344616(asia-east1)... 
+[debug] [2023-11-28T16:01:25.287Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions functionId=ssrggwtw344616
+[debug] [2023-11-28T16:01:25.287Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions {"name":"projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrggwtw344616","source":{"storageSource":{"bucket":"gcf-v2-uploads-948625745477-asia-east1","object":"b8b77a13-87d2-4517-bf8f-0bcf6cc9f679.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"ggwtw-344616\",\"appId\":\"1:948625745477:web:ceb697d1ec4edf7f6a652c\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g\",\"authDomain\":\"ggwtw-344616.firebaseapp.com\",\"messagingSenderId\":\"948625745477\",\"measurementId\":\"G-DL92ZD1KHW\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"ggwtw-344616\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\"}","GCLOUD_PROJECT":"ggwtw-344616","EVENTARC_CLOUD_EVENT_SOURCE":"projects/ggwtw-344616/locations/asia-east1/services/ssrggwtw344616","FUNCTION_TARGET":"ssrggwtw344616"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-ggwtw-344616","firebase-functions-hash":"3204d238da6cb516e35f874809528740b26f57fe"}}
+[debug] [2023-11-28T16:01:25.780Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions 400
+[debug] [2023-11-28T16:01:25.780Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/ggwtw-344616/locations/asia-east1/functions {"error":{"code":400,"message":"Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.","status":"INVALID_ARGUMENT"}}
+[warn] !  functions: Your current project quotas don't allow for the current max instances setting of 100. Either reduce this function's maximum instances, or request a quota increase on the underlying Cloud Run service at https://cloud.google.com/run/quotas. 
+[warn] !  functions: You can adjust the max instances value in your function's runtime options:
+	setGlobalOptions({maxInstances: 10}) 
+[error] Failed to create function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616
+[debug] [2023-11-28T16:01:25.784Z] Total Function Deployment time: 496
+[debug] [2023-11-28T16:01:25.784Z] 1 Functions Deployed
+[debug] [2023-11-28T16:01:25.784Z] 1 Functions Errored
+[debug] [2023-11-28T16:01:25.784Z] 0 Function Deployments Aborted
+[debug] [2023-11-28T16:01:25.784Z] Average Function Deployment time: 495
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-ggwtw-344616:ssrggwtw344616(asia-east1)
+[debug] [2023-11-28T16:01:25.821Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-11-28T16:01:25.823Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 [none]
+[debug] [2023-11-28T16:01:25.824Z] >>> [apiv2][query] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list [none]
+[debug] [2023-11-28T16:01:25.890Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 500
+[debug] [2023-11-28T16:01:25.890Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/ggwtw-344616/locations/asia-east1/repositories/gcf-artifacts/packages/ssrggwtw344616 {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[debug] [2023-11-28T16:01:25.967Z] <<< [apiv2][status] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list 200
+[debug] [2023-11-28T16:01:25.967Z] <<< [apiv2][body] GET https://asia.gcr.io/v2/ggwtw-344616/gcf/asia-east1/tags/list {"child":[],"manifest":{},"name":"ggwtw-344616/gcf/asia-east1","tags":[]}
+[debug] [2023-11-28T16:01:25.967Z] Could not find image for function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616
+[warn] !  functions: Unhandled error cleaning up build images. This could result in a small monthly bill if not corrected. You can attempt to delete these images by redeploying or you can delete them manually at https://console.cloud.google.com/artifacts/docker/ggwtw-344616/asia-east1/gcf-artifacts 
+[debug] [2023-11-28T16:01:25.967Z] Functions deploy failed.
+[debug] [2023-11-28T16:01:25.968Z] {
+  "endpoint": {
+    "id": "ssrggwtw344616",
+    "project": "ggwtw-344616",
+    "region": "asia-east1",
+    "entryPoint": "ssrggwtw344616",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"ggwtw-344616\",\"appId\":\"1:948625745477:web:ceb697d1ec4edf7f6a652c\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\",\"apiKey\":\"AIzaSyAVPyfZIcW31aej6L8L2f5zteKVnitVd7g\",\"authDomain\":\"ggwtw-344616.firebaseapp.com\",\"messagingSenderId\":\"948625745477\",\"measurementId\":\"G-DL92ZD1KHW\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"ggwtw-344616\",\"storageBucket\":\"ggwtw-344616.appspot.com\",\"locationId\":\"us-central\"}",
+      "GCLOUD_PROJECT": "ggwtw-344616",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/ggwtw-344616/locations/asia-east1/services/ssrggwtw344616"
+    },
+    "codebase": "firebase-frameworks-ggwtw-344616",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "3204d238da6cb516e35f874809528740b26f57fe"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/ggwtw-344616/locations/asia-east1/functions/ssrggwtw344616",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 400, Could not create Cloud Run service ssrggwtw344616. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2023-11-28T16:01:25.979Z] Error: Failed to create function ssrggwtw344616 in region asia-east1
+    at C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:291:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV2Function (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:277:30)
+    at async Fabricator.createEndpoint (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:136:13)
+    at async handle (C:\Users\shngj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions
