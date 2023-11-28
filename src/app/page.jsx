@@ -29,9 +29,10 @@ export default async function Home() {
                     </div>
                     <div className="flex items-center space-x-1.5">
                       <p className="text-sm text-gray-400">{post.date}</p>
-                      <p className="text-gray-400">·</p>
+                      {post.hashtag?
+                        <p className="text-gray-400">·</p> : ""}
                       <div className="flex space-x-1">
-                        {post.hashtag.map((item) => (
+                        {post.hashtag?.map((item) => (
                           <div key={item} className="bg-gray-200 p-1.5 px-3 rounded-full">
                             <p className="text-xs">{item}</p>
                           </div>
