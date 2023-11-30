@@ -6,7 +6,6 @@ const LoadingCircle = () => {
 const Loading = () => {
   return (
     <div className='space-y-4'>
-      <Navbar />
       <div className="fixed inset-0 flex items-center justify-center">
           <LoadingCircle />
       </div>
