@@ -1,3 +1,4 @@
+'use server'
 import { ref, getDownloadURL, listAll, getMetadata } from 'firebase/storage';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { storage } from '../../../firebase';
@@ -68,12 +69,12 @@ export const getPageFillBySlug = async (slug) => {
 export const getAllPostMeta = async () => {
   const storageRef = ref(storage, storageBucketPath);
   const result = await listAll(storageRef);
-
+  console.log(result);
   const posts = await Promise.all(
     result.items.map(async (fileRef) => {
       const fileURL = await getDownloadURL(fileRef);
 
-      const response = await fetch(fileURL);
+      const response = await fetch(fileURL, { cache: 'force-cache' });
       const fileContent = await response.text();
 
       const { frontmatter } = await compileMDX({

@@ -1,11 +1,12 @@
+'use server'
 import { Chip, ChipContainer } from "@/components/chip/Chip"
-import Navbar from "@/components/navbar/Navbar"
-import { getAllPostMeta } from "@/lib/mdx"
-import Link from "next/link"
 import { IoChevronForwardOutline } from 'react-icons/io5'
-
+import { getAllPostMeta } from "@/lib/mdx"
+import Link from 'next/link'
 export default async function Home() {
+
   const posts = await getAllPostMeta()
+
   return (
     <main className="space-y-2">
       <div className="mx-auto max-w-7xl w-full">
