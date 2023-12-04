@@ -63,7 +63,7 @@ const MdxPage = async ({ params }) => {
             </div>
           </div>
           <div className='w-full h-[1px] bg-gray-300' />
-          <div className="xl:absolute top-2 right-4 xl:max-w-[21rem] w-full space-y-2">
+          <div className="xl:fixed xl:right-[max(0px,calc(50%-40rem))] top-16 right-4 xl:max-w-[21rem] w-full space-y-2">
             <p className='text-lg font-bold'>附加檔案</p>
             <div className="flex overflow-auto">
               <div className="bg-white xl:w-full border flex xl:block p-1.5 rounded-xl space-x-1.5 xl:space-x-0 xl:space-y-1.5">
